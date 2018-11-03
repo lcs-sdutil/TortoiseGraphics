@@ -22,15 +22,12 @@ canvas.drawing { t in
     
     t.setH(90)
     
-    for _ in 1...2{
+    
         
     //draw Snignature
     t.signature()
-    t.penUp()
-    t.goto(-350, 250)
-    t.right(90)
-    t.forward(2)
-    }
+    
+    
         
 }
 
