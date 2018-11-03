@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' display-mode='raw'>
+<playground version='6.0' target-platform='macos' display-mode='raw' executeOnSourceChanges='false'>
     <pages>
-        <page name='With a tortoise'/>
-        <page name='With 2 tortoises'/>
+        <page name='starting Code for Turtle Graphics'/>
+        <page name='Oct 20 Exericse 1'/>
+        <page name='0ct 20 Exercise 2'/>
+        <page name='oct 20 Exercise 3'/>
+        <page name='Practice'/>
+        <page name='Methods Example'/>
+        <page name='signature'/>
     </pages>
 </playground>

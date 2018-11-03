@@ -40,6 +40,8 @@
 		14C3A09D201CA62000C7A28C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3A09C201CA62000C7A28C /* Shape.swift */; };
 		14D753A91FE173C80038F931 /* CommandFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D753A81FE173C80038F931 /* CommandFill.swift */; };
 		14D753AB1FE17D290038F931 /* Vec2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D753AA1FE17D290038F931 /* Vec2D.swift */; };
+		3DBDE9E62187DCDA004583D9 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDE9E52187DCDA004583D9 /* Signature.swift */; };
+		3DED55442183517F00B04940 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DED55432183517F00B04940 /* Extensions.swift */; };
 		OBJ_109 /* TortoiseGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TortoiseGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		14C3A09C201CA62000C7A28C /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		14D753A81FE173C80038F931 /* CommandFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandFill.swift; sourceTree = "<group>"; };
 		14D753AA1FE17D290038F931 /* Vec2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vec2D.swift; sourceTree = "<group>"; };
+		3DBDE9E52187DCDA004583D9 /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		3DED55432183517F00B04940 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		OBJ_53 /* TortoiseGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TortoiseGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_54 /* TortoiseGraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TortoiseGraphicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 		142F5C841EDC5688008BEFAB /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				3DBDE9E52187DCDA004583D9 /* Signature.swift */,
+				3DED55432183517F00B04940 /* Extensions.swift */,
 				14B5090F1FE7FDF700ABA1E2 /* TortoiseCharmer.swift */,
 				145624911ED99E4800173B9A /* GraphicsContext.swift */,
 				141772761EE2930600C0CBC7 /* Angle.swift */,
@@ -308,6 +314,7 @@
 				14588D141EDEFF1100922BE4 /* Color.swift in Sources */,
 				14B44CDF1FE557C300E0144B /* GraphicsCanvas.swift in Sources */,
 				141772771EE2930600C0CBC7 /* Angle.swift in Sources */,
+				3DBDE9E62187DCDA004583D9 /* Signature.swift in Sources */,
 				1456248C1ED99CE500173B9A /* CommandForward.swift in Sources */,
 				14C3A09D201CA62000C7A28C /* Shape.swift in Sources */,
 				1451BF661ED872C200D200DD /* Tortoise.swift in Sources */,
@@ -316,6 +323,7 @@
 				145624921ED99E4800173B9A /* GraphicsContext.swift in Sources */,
 				145624981EDAA48D00173B9A /* ImageCanvas.swift in Sources */,
 				145624901ED99D8600173B9A /* State.swift in Sources */,
+				3DED55442183517F00B04940 /* Extensions.swift in Sources */,
 				1456248E1ED99D1900173B9A /* Command.swift in Sources */,
 				142F5C9C1EDC63DA008BEFAB /* Tortoise+TortoiseState.swift in Sources */,
 			);
