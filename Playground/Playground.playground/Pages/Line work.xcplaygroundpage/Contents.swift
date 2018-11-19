@@ -1,31 +1,17 @@
 //: # With a tortoise 🐢
-
 import PlaygroundSupport
 import TortoiseGraphics
 import CoreGraphics
 
 let myFrame = CGRect(x: 0, y: 0, width: 500, height: 500)
 let canvas = PlaygroundCanvas(frame:myFrame)
-canvas.frameRate = 3000
+canvas.frameRate = 50
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
+// Start drawing
 canvas.drawing { turtle in
+    
+    
+}
 
-    turtle.fillColor(.orange)
-    // Draw a square
-    
-    turtle.penColor(.black)
-    turtle.beginFill()
-    
-    for _ in 1...180{
-    
-        for _ in 1...4{
-    turtle.forward(150)
-    turtle.right(90)
-    }
- 
-    turtle.right(2)
-}
-    turtle.endFill()
-}

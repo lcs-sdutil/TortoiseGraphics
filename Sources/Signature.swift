@@ -141,13 +141,14 @@ public extension Tortoise {
         self.setH(90)
     }
 
-    func signature() {
-        self.s()
-        self.d()
-        self.u()
-        self.t()
-        self.i()
-        self.l()
+    func signature(scaleFactor scale: Double = 1.0) {
+
+        self.s(scaleFactor: scale)
+        self.d(scaleFactor: scale)
+        self.u(scaleFactor: scale)
+        self.t(scaleFactor: scale)
+        self.i(scaleFactor: scale)
+        self.l(scaleFactor: scale)
 
     }
 

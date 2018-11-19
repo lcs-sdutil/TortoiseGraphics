@@ -25,7 +25,7 @@ canvas.drawing { t in
     
         
     //draw Snignature
-    t.signature()
+    t.signature(scaleFactor: 0.2)
     
     
         
