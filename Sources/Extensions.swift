@@ -82,4 +82,70 @@ public extension Tortoise {
         self.fd(200)
         self.ht()
     }
+
+    func randomTravel() {
+
+        for _ in 1...50 {
+
+            // Turn a bit
+            let turn = self.random(20) - 10
+            self.left(turn)
+
+            // Draw a random line length
+            let distance = self.random(10)
+            self.forward(distance)
+
+        }
+
+    }
+
+    func hairball() {
+
+    // Draw many squiggly lines
+    for _ in 1...25 {
+
+    // Turn a random amount
+    let turn = self.random(360)
+    self.left(turn)
+
+    // Draw a squiggly line
+    randomTravel()
+
+    // Return to middle of canvas
+    self.penUp()
+    self.goto(0, 0)
+    self.setHeading(0)
+    self.penDown()
+
+    }
+
+    // Hide the turtle when done
+    self.hideTortoise()
+
+    }
+
+    func lineexplosion() {
+
+    for _ in 1...100 {
+
+    // Turn a random amount
+    let turn = self.random(360)
+    self.left(turn)
+
+    // Draw a random line length
+    let distance = self.random(250)
+    self.forward(distance)
+
+    // Go back to centre of canvas and original heading
+    self.penUp()
+    self.goto(0, 0)
+    self.setHeading(0)
+    self.penDown()
+
+    }
+
+    // Hide the turtle when done
+    self.hideTortoise()
+}
+
 }
