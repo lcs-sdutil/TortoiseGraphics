@@ -48,4 +48,38 @@ public extension Tortoise {
         self.penUp()
     }
 
+    func icecream() {
+        self.penUp()
+        self.forward(100)
+        self.penUp()
+
+        for _ in 1...3 {
+
+            for _ in 1...36 {
+                self.penUp()
+                self.forward(5)
+                self.right(5)
+                self.penDown()
+                self.forward(7)
+                self.right(5)
+
+            }
+
+            self.left(90)
+        }
+        // goto the bottom of circle right
+        self.penUp()
+        self.setH(180)
+        self.fd(67)
+        self.left(90)
+        self.fd(69)
+        self.penDown()
+
+        //form a triangle
+        self.setH(200)
+        self.fd(200)
+        self.setH(338)
+        self.fd(200)
+        self.ht()
+    }
 }

@@ -29,6 +29,11 @@ canvas.drawing { t in
     
     canvas.drawing { turtle in
         
+        turtle.setH(180)
+        turtle.fd(100)
+        
+        
+        
         // Draw many squiggly lines
         for _ in 1...25 {
             
