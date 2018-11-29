@@ -11,6 +11,9 @@ PlaygroundPage.current.liveView = canvas
 
 // Start drawing
 canvas.drawing { t in
-    t.hairball()
+   
+    t.lineexplosion(atX: -150, atY: 150, scaleFactor: 0.3)
+    t.hairball(atX: 0, atY: 150, scaleFactor: 0.2)
     
+    t.dashedcircle(atX: 140, atY: 150,scaleFactor: 0.5)
 }
