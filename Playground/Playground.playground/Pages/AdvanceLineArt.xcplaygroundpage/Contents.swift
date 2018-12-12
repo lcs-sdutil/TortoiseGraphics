@@ -9,17 +9,21 @@ canvas.frameRate = 300
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
+
 // Start drawing
 canvas.drawing { t in
-    t.hill()
-    t.penSize(3)
-    t.setH(270)
-    t.fd(510)
-    t.rt(90)
-    t.fd(90)
-    t.setH(90)
-    t.curve(withSides: -80, withSize: 20, drawSides: 6)
-    t.setH(180)
-    t.fd(80)
 
+    t.hill()
+    t.jump()
+    t.rail()
+    t.penSize(0.1)
+    t.setPos(-250, 200)
+    for _ in 1...10{
+    
+    t.lineexplosion(atX: -200 + 30, atY: 200 - 30, scaleFactor: 0.1)
+
+
+    
+    }
+    
 }

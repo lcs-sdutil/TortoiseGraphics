@@ -173,14 +173,65 @@ public extension Tortoise {
     }
 
     func hill() {
-    self.ht()
-    self.penUp()
-    self.penSize(5)
-    self.setH(270)
-    self.fd(360)
-    self.penDown()
-    self.setH(100)
-    self.fd(750)
-    self.penUp()
+        self.ht()
+        self.penUp()
+        self.penSize(5)
+        self.setH(270)
+        self.fd(360)
+        self.penDown()
+        self.setH(100)
+        self.fd(750)
+        self.penUp()
     }
+
+    func jump() {
+        self.penSize(3)
+        self.setH(270)
+        self.fd(510)
+        self.rt(90)
+        self.fd(90)
+        self.setH(90)
+        self.curve(withSides: -80, withSize: 20, drawSides: 6)
+        self.penDown()
+        self.setH(180)
+        self.fd(43)
+        self.penUp()
+
+    }
+
+    func rail() {
+        self.setH(90)
+        self.fd(40)
+        self.lt(90)
+        self.fd(50)
+        self.penDown()
+        self.setH(100)
+        self.forward(230)
+        self.curve(withSides: 20, withSize: 3, drawSides: 10)
+        self.penDown()
+        self.fd(230)
+        self.curve(withSides: 20, withSize: 3, drawSides: 10)
+        self.penUp()
+
+        // First leg
+        self.setH(90)
+        self.fd(25)
+        self.rt(90)
+        self.fd(5)
+        self.penDown()
+        self.setH(180)
+        self.fd(60)
+
+        // second leg
+        self.penUp()
+        self.setH(90)
+        self.fd(173)
+        self.left(90)
+        self.fd(31)
+        self.penDown()
+        self.setH(180)
+        self.fd(60)
+        self.penUp()
+    }
+
 }
