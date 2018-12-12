@@ -1,7 +1,7 @@
 public extension Tortoise {
-    
+
     func square(withSize size: Double) {
-        
+
         self.penDown()
         for _ in 1...4 {
             self.forward(size)
@@ -9,52 +9,52 @@ public extension Tortoise {
         }
         self.penUp()
     }
-    
+
     func arrows() {
-        
+
         self.forward(100)
         self.left(90)
-        
+
         self.forward(40)
         self.right(125)
-        
+
         self.forward(100)
         self.right(110)
-        
+
         self.forward(100)
         self.right(125)
-        
+
         self.forward(40)
         self.left(90)
-        
+
         self.forward(100)
         self.right(90)
-        
+
         self.forward(34.8)
         self.right(90)
-        
+
     }
-    
+
     func curve(withSides sideCount: Int, withSize size: Double, drawSides sideLimit: Int) {
-        
+
         self.penDown()
         for _ in 1...sideLimit {
             self.forward(size)
             print(self.xcor)
             print(self.ycor)
             self.right(360 / Double(sideCount))
-            
+
         }
         self.penUp()
     }
-    
+
     func icecream() {
         self.penUp()
         self.forward(100)
         self.penUp()
-        
+
         for _ in 1...3 {
-            
+
             for _ in 1...36 {
                 self.penUp()
                 self.forward(5)
@@ -62,9 +62,9 @@ public extension Tortoise {
                 self.penDown()
                 self.forward(7)
                 self.right(5)
-                
+
             }
-            
+
             self.left(90)
         }
         // goto the bottom of circle right
@@ -74,7 +74,7 @@ public extension Tortoise {
         self.left(90)
         self.fd(69)
         self.penDown()
-        
+
         //form a triangle
         self.setH(200)
         self.fd(200)
@@ -82,94 +82,105 @@ public extension Tortoise {
         self.fd(200)
         self.ht()
     }
-    
+
     func randomTravel(scaleFactor scale: Double = 1.0) {
-        
+
         for _ in 1...50 {
-            
+
             // Turn a bit
             let turn = self.random(20) - 10
             self.left(turn)
-            
+
             // Draw a random line length
             let distance = self.random(10)
             self.forward(distance * scale)
-            
+
         }
-        
+
     }
-    
+
     func hairball(atX: Double, atY: Double, scaleFactor scale: Double = 1.0) {
-        
+
         self.penUp()
         self.goto(atX, atY)
         self.penDown()
         // Draw many squiggly lines
         for _ in 1...25 {
-            
+
             // Turn a random amount
             let turn = self.random(360)
             self.left(turn)
-            
+
             // Draw a squiggly line
             randomTravel(scaleFactor: 0.3)
-            
+
             // Return to middle of canvas
             self.penUp()
             self.goto(atX, atY)
             self.setHeading(0)
             self.penDown()
-            
+
         }
-        
+
         // Hide the turtle when done
         self.hideTortoise()
-        
+
     }
-    
+
     func lineexplosion(atX: Double, atY: Double, scaleFactor scale: Double = 1.0 ) {
-        
-        
+
         self.penUp()
         self.goto(atX, atY)
         self.penDown()
         for _ in 1...100 {
-            
+
             // Turn a random amount
             let turn = self.random(360)
             self.left(turn)
-            
+
             // Draw a random line length
             let distance = self.random(250)
             self.forward(distance * scale)
-            
+
             // Go back to centre of canvas and original heading
             self.penUp()
             self.goto(atX, atY)
-            
+
             self.setHeading(0)
             self.penDown()
-            
+
         }
-        
+
         // Hide the turtle when done
         self.hideTortoise()
     }
-    
+
     func dashedcircle(atX: Double, atY: Double, scaleFactor scale: Double = 1.0) {
-        
+
         self.penUp()
         self.goto(atX, atY)
         self.penDown()
         for _ in 1...36 {
             self.penUp()
-            
+
             self.forward(5 * scale)
             self.right(5)
             self.penDown()
             self.forward(7 * scale)
             self.right(5)
-            
+
         }
+    }
+
+    func hill() {
+    self.ht()
+    self.penUp()
+    self.penSize(5)
+    self.setH(270)
+    self.fd(360)
+    self.penDown()
+    self.setH(100)
+    self.fd(750)
+    self.penUp()
     }
 }
