@@ -243,4 +243,78 @@ public extension Tortoise {
         self.penUp()
     }
 
+    
+    func mountain(){
+        // pensize smaller for far away mountains
+        self.penSize(1)
+
+        // move to left of canvas
+        self.penUp()
+        self.setH(270)
+        self.fd(574)
+        //turn right
+        self.rt(90)
+        // up
+        self.fd(240)
+        //pendown
+        self.penDown()
+        self.setH(45)
+        self.fd(120)
+        //backdown
+        self.right(110)
+        self.fd(40)
+        self.lt(80)
+        self.fd(15)
+        self.right(80)
+        self.fd(90)
+        // mountain no 2
+        self.setH(30)
+        self.fd(160)
+        self.rt(123)
+        self.fd(160)
+        // mountain no 3
+        self.setH(40)
+        self.fd(160)
+        self.curve(withSides: 60, withSize: 4, drawSides: 17)
+        self.penDown()
+        self.fd(160)
+        //self.xcor
+        //self.ycor
+        // go back to draw line on mountain
+        self.penUp()
+        self.bk(120)
+        self.penDown()
+        self.setH(240)
+        
+        //loop
+        for _ in 1...9{
+            self.fd(7)
+            self.right(60)
+            self.fd(7)
+            self.left(60)
+            
+        }
+        //self.xcor
+        //self.ycor
+        
+        //Go back to the end of mountain no 3
+        self.penUp()
+        self.setH(90)
+        self.fd(183)
+        //turn right
+        self.rt(90)
+        // down
+        self.fd(96)
+        //pendown
+        self.penDown()
+        //draw mountain no 4
+        self.setH(40)
+        self.fd(100)
+        self.rt(80)
+        self.fd(15)
+        self.lt(80)
+        self.fd(86)
+        
+        
+    }
 }
