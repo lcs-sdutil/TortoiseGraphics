@@ -243,8 +243,7 @@ public extension Tortoise {
         self.penUp()
     }
 
-    
-    func mountain(){
+    func mountain() {
         // pensize smaller for far away mountains
         self.penSize(1)
 
@@ -285,18 +284,18 @@ public extension Tortoise {
         self.bk(120)
         self.penDown()
         self.setH(240)
-        
+
         //loop
-        for _ in 1...9{
+        for _ in 1...9 {
             self.fd(7)
             self.right(60)
             self.fd(7)
             self.left(60)
-            
+
         }
         //self.xcor
         //self.ycor
-        
+
         //Go back to the end of mountain no 3
         self.penUp()
         self.setH(90)
@@ -314,7 +313,6 @@ public extension Tortoise {
         self.fd(15)
         self.lt(80)
         self.fd(86)
-        
-        
+
     }
 }
