@@ -173,8 +173,10 @@ public extension Tortoise {
     }
 
     func hill() {
+        //draw line going down
         self.ht()
         self.penUp()
+        // penSize
         self.penSize(5)
         self.setH(270)
         self.fd(360)
@@ -185,12 +187,14 @@ public extension Tortoise {
     }
 
     func jump() {
+        // move to the half of the line
         self.penSize(3)
         self.setH(270)
         self.fd(510)
         self.rt(90)
         self.fd(90)
         self.setH(90)
+        //Go up for the jump
         self.curve(withSides: -80, withSize: 20, drawSides: 6)
         self.penDown()
         self.setH(180)
@@ -200,6 +204,7 @@ public extension Tortoise {
     }
 
     func rail() {
+        // move to the start of the rail
         self.setH(90)
         self.fd(40)
         self.lt(90)
@@ -207,13 +212,16 @@ public extension Tortoise {
         self.penDown()
         self.setH(100)
         self.forward(230)
+        //curve back to go back under
         self.curve(withSides: 20, withSize: 3, drawSides: 10)
         self.penDown()
         self.fd(230)
+        // curve to go back up
         self.curve(withSides: 20, withSize: 3, drawSides: 10)
         self.penUp()
 
         // First leg
+        //move to the top of the leg
         self.setH(90)
         self.fd(25)
         self.rt(90)
@@ -223,6 +231,7 @@ public extension Tortoise {
         self.fd(60)
 
         // second leg
+        //move to the top of the second rail
         self.penUp()
         self.setH(90)
         self.fd(173)

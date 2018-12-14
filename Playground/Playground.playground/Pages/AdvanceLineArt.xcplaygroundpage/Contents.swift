@@ -13,17 +13,17 @@ PlaygroundPage.current.liveView = canvas
 // Start drawing
 canvas.drawing { t in
 
+
     t.hill()
     t.jump()
     t.rail()
-    t.penSize(0.1)
-    t.setPos(-250, 200)
-    for _ in 1...10{
+    t.penSize(1)
+    t.setPos(-35, 200)
+    t.setH(70)
     
-    t.lineexplosion(atX: -200 + 30, atY: 200 - 30, scaleFactor: 0.1)
 
 
     
-    }
+    
     
 }
