@@ -19,11 +19,8 @@ canvas.drawing { t in
     t.rail()
     t.mountain()
     //make sun
-    t.lineexplosion(atX: 230, atY: 230, scaleFactor: 0.5)
-    
+    t.lineexplosion(atX: 220, atY: 220, scaleFactor: 0.5)
+    t.snowboarder()
    
-    
-    
-    
     
 }

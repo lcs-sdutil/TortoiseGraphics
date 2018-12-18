@@ -315,4 +315,64 @@ public extension Tortoise {
         self.fd(86)
 
     }
+
+    func snowboarder() {
+
+        //move to bottom of snowboard
+        self.penUp()
+        self.setH(270)
+        self.fd(440)
+        self.left(90)
+        self.fd(225)
+
+        //make snowboard
+
+        self.setH(100)
+        self.penDown()
+        self.fd(60)
+        //curve down
+        self.curve(withSides: 20, withSize: 2, drawSides: 10)
+        self.penDown()
+
+        self.fd(60)
+
+        //curve back up
+        self.curve(withSides: 20, withSize: 2, drawSides: 10)
+
+        // go to bottom to foot
+        self.setH(90)
+        self.fd(16)
+        self.rt(90)
+        self.fd(11)
+        self.setH(29)
+
+        //do the legs
+        self.penDown()
+        self.fd(35)
+        self.rt(140)
+        self.fd(35)
+        self.penUp()
+        self.bk(35)
+        self.setH(8)
+
+        //go up
+        self.penDown()
+        self.fd(20)
+
+        //arms
+        self.lt(130)
+        self.fd(20)
+        self.penUp()
+        self.bk(20)
+        self.penDown()
+        self.setH(120)
+        self.fd(20)
+        self.penUp()
+        self.bk(20)
+        self.setH(92)
+
+        //head
+        self.penDown()
+        self.curve(withSides: -14, withSize: 4, drawSides: 15)
+    }
 }
